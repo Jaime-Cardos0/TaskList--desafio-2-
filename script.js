@@ -60,7 +60,8 @@ function createTaskElement(text, completed = false, index) {
     });
 
     deleteButton.addEventListener("click", () => {
-        tasks.splice(index, 1);
+        tasks = tasks.filter(t => t.index !== tasks[index].
+        //tasks.splice(index, 1);
         saveTasks();
         renderTasks();
     });
@@ -83,7 +84,8 @@ newTaskInput?.addEventListener("keypress", (e) => {
 function addTask() {
     const taskText = newTaskInput.value.trim();
     if (taskText) {
-        tasks.push({ text: taskText, completed: false });
+        tasks = [...tasks, { text: taskText, completed: false }]
+        //tasks.push({ text: taskText, completed: false });
         saveTasks();
         createTaskElement(taskText, false, tasks.length - 1);
         newTaskInput.value = "";
