@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskList</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer type="module"></script>
+    <script src="styles.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <header>
+                <input type="text" name="newTask" id="newTask" placeholder="Crie uma tarefa">
+                <Button type="button" id="addTaskButton">+</Button>
+            </header>
+
+            <hr/>
+            
+            <div id="taskList">
+                <div class="task">
+                    <div>
+                        <input type="checkbox" name="task1" id="task1"/>
+                        <label for="task1">Task</label>
+                    </div>
+                    <button type="button">x</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

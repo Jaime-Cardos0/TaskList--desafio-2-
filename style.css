@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", Arial;
+}
+
+body {
+    background-color: rgb(246, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 1px rgb(179, 179, 179);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 400px;
+    min-height: 100px;
+    max-height: 70vh;
+    padding: 1.25rem 1.5rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    background-color: rgb(231, 231, 231);
+    gap: .5rem;
+}
+
+#newTask {
+    border: none;
+    outline: none;
+    background-color:rgb(231, 231, 231);
+    flex: 1;
+    color: gray;
+    font-size: .875rem;
+}
+
+#newTask::placeholder{
+    font-size: .875rem;
+    font-weight: 500;
+    color: gray;
+}
+
+#addTaskButton{
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    vertical-align: middle;
+    line-height: 0;
+    text-align: center;
+    background-color: darkgrey;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    transition: 0.25s;
+}
+
+#addTaskButton:hover{
+    transform: scale(1.05);
+    color: gray;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+#taskList{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: .875rem;
+    border-radius: .5rem;
+    border: 2px solid rgb(185, 185, 185);
+}
+
+.task div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.task div input{
+    accent-color: gray;
+}
+
+.task button{
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0;
+    padding: 4px 6px;
+    color: rgb(139, 139, 139);
+    font-family: "Outfit";
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.task button:hover{
+    background-color: rgb(236, 236, 236);
+}
