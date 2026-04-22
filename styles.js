@@ -12,7 +12,7 @@ export const divLayoutStyle = {
     gap: "8px",
 }
 
-export const closeButtonStyle = {
+export const deleteButtonStyle = {
     border: "none",
     borderRadius: "4px",
     backgroundColor: "transparent",
